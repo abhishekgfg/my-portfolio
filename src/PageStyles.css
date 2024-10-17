@@ -1,0 +1,29 @@
+/* Base styling for all pages */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    transition: background-color 1s ease-in-out;
+  }
+  
+  /* Specific styles for each page */
+  .skills-page {
+    background: linear-gradient(135deg, #00337baa, #0033ff);
+  }
+  
+  .projects-page {
+    background: linear-gradient(135deg, #cc1ef7, #5d00ff);
+  }
+  
+  .about-page {
+    background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+  }
+  
+  .contact-page {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+  }
+  

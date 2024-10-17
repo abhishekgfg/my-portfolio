@@ -1,0 +1,42 @@
+/* Section styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  .section:nth-child(even) {
+    background-color: #333;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .section-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-card,
+  .project-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover,
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Contact styles */
+  .section a {
+    color: #2575fc;
+    text-decoration: underline;
+  }
+  

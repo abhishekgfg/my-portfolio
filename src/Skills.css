@@ -1,0 +1,96 @@
+/* Skills section styling */
+.skills-section {
+    padding: 50px;
+    background: linear-gradient(135deg, #1f4037, #0c7645);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .skill-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .skill-box:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skill-header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .skill-header span {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    position: relative;
+  }
+  
+  .skill-bar-inner {
+    height: 100%;
+    background-color: #f4d03f;
+    animation: fillBar 2s ease-in-out;
+  }
+  
+  @keyframes fillBar {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-box {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
